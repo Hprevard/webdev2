@@ -1,0 +1,68 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	font-family:Bradley Hand; 
+    background: #E0B2B2; 
+    color:#73649D;
+    margin: auto
+}
+
+
+div#container {
+    margin:auto;
+	max-width:800px;
+    width:90%
+    border:1px solid #5FB0BB; 
+    background: #D9A3B5;
+    
+}
+ul{
+    list-style:none; 
+    padding-left: 0px;
+}
+a{
+    color:lightpink;
+}
+
+a:hover{
+    color:lightcoral
+}
+figure{
+    margin:0px;
+}
+figure img{width:100%}
+figcaption,footer{
+    font-size: 0.75em;
+}
+header{
+    font-family: sans-serif;
+        background:#5D9BA3;
+        color:#75A2C7;
+    text-align: center;
+    padding:2em;
+}
+footer {
+    background: #8CB6B2;
+        color:#C0B6D1;
+        text-align:right; 
+        padding:0.5em;
+        font-size: 0.8em; 
+}
+
+
+
+
