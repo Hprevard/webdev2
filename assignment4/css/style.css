@@ -3,6 +3,7 @@ html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
+background-color: #D9A3B5;  
 }
 
 html {
@@ -15,14 +16,61 @@ html {
 
 
 body {
-	
+	font-family: 'Playfair Display',sans-serif
+       
 	
 }
 
+h1{font-family:'Playfair Display',sans-serif;
+font-weight:400; 
+    text-shadow: 2px 2px 5px aquamarine;
+    color:azure;
+}
 
+p.pink{
+    
+    font-family:'Playfair Display',sans-serif;
+font-weight:900em; 
+    text-shadow: 2px 2px 5px aquamarine; 
+    color: rgb(212,132,167); 
+    color: radial-gradient(circle, rgba(212,132,167,1) 21%, rgba(148,187,233,1) 100%);
+    background-color: cornsilk; 
+    position: absolute; 
+    bottom: 4px; 
+    right:22px; 
+}
+
+p.gray{
+    background-color: beige; 
+    position: relative;
+    font-weight:900em;
+       color: rgb(212,132,167); 
+    color: radial-gradient(circle, rgba(212,132,167,1) 21%, rgba(148,187,233,1) 100%);
+    background-color: cornsilk;       
+    }  
+    
+p.dryer{
+    position: absolute;
+    bottom 25px; 
+    color: rgb(212,132,167); 
+    color: radial-gradient(circle, rgba(212,132,167,1) 21%, rgba(148,187,233,1) 100%);
+    background-color: cornsilk;  
+    font-weight:900em;
+     opacity: 0.3;
+}
+
+p{ 
+    width:300px; 
+    margin: 0px;
+    
+}
 #container {
-	
+	border:1px solid black; 
+    width:600px; 
+    margin:auto;
+    position: relative; 
 }
+
 
 
 
