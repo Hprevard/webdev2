@@ -1,4 +1,3 @@
-/* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
 	margin:0px;
 	padding:0px;
@@ -21,7 +20,173 @@ body {
 
 
 #container {
+width:800px; 
+position: relative; 
 	
+}
+
+#taurus{
+    font-size: 127px;
+    right: 127px; 
+    bottom: 85px;
+    position:absolute; 
+    background-color: azure; 
+    transition: width 2s, height 4s, transform 2s;
+    transition-timing-function: ease-in;
+      transition-delay: 1s;
+     transition-property: width;
+  transition-duration: 2s;
+}
+#taurus:hover{
+    width: 300px;
+}
+
+#gemini{
+   font-size: 127px;
+    left: 127px; 
+    bottom: 85px;
+    position:absolute; 
+    animation: slide 5s linear infinite; 
+}
+@keyframes slide{
+    
+    from{transform: translateX(0);}
+    to {transform: translateX(100px);}
+}
+
+#gemini:hover{
+      width:200px;
+}
+
+#aries{
+   font-size: 127px;
+    right:127px;
+    top:85px;
+    position: absolute;
+    left:200px;
+    transition: all 10s;
+    animation: spin 3s linear infinite;
+    
+}
+
+#aries{
+    width:200px;
+    transform: rotate(180deg);
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to {transform:rotate(360deg);}
+}
+
+#snow{
+    position: absolute; 
+    bottom:467px;
+    left:567px;
+    font-size:123px;
+    transition: background 0.5s ease-in-out; 
+    transition:all 3s;
+    color:aqua;
+}
+
+
+#snow:hover{
+    width:350px
+        background:blue;
+      transform: rotate(1800deg);
+}
+
+#spade{
+   right:67px;
+    top:32px;
+    position: absolute;
+    font-size:127px;
+    color:lightcoral;
+    animation: slide 4s linear infinite;
+}
+
+
+#heart{
+    right:367px;
+    bottom:289px;
+    position:absolute;
+    font-size:123px;
+    color: rosybrown;
+    transition: all 10s;
+    animation: spin 3s linear infinite;
+}
+
+
+#diamond{
+   right:405px; 
+    bottom:454px; 
+    position: absolute; 
+    font-size:132px; 
+    color:lightblue;
+    transition: all 10s;
+    animation: spin 1s linear infinite;
+}
+#diamond:hover{
+    width:200px;
+    transform: rotate(180deg);
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to {transform:rotate(360deg);}
+}
+
+
+#crown{
+    bottom:467px;
+    position: absolute;
+    font-size:123px; 
+    color:palevioletred; 
+    transition: all 10s;
+    animation: spin 3s linear infinite;
+}
+#crown:hover{
+    width:200px;
+    transform: rotate(180deg);
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to {transform:rotate(360deg);}
+}
+
+#syriac{
+    left:56px;
+    bottom:687px; 
+    position: absolute;
+    font-size:127px;
+    color:cornflowerblue;
+    animation: slide 5s linear infinite; 
+}
+@keyframes slide{
+    
+    from{transform: translateX(0);}
+    to {transform: translateX(100px);}
+}
+}
+#syriac:hover{
+     width:350px;      
+}
+
+#scorpio{
+    left:89px;
+    bottom:287px; 
+    position:absolute;
+    font-size:127px; 
+    animation: slide 3s linear infinite; 
+}
+@keyframes slide{
+    
+    from{transform: translateX(0);}
+    to {transform: translateX(100px);}
 }
 
 
