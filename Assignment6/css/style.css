@@ -1,0 +1,167 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+    background:#D9A3B5 url('../img/chik.jpeg')no-repeat fixed center; 
+    background-size: contain;
+	
+	
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+    color: brown;
+    font-weight:600em;
+    font-style: normal;
+    font-family: "Saira-Condensed-semibold", sans-serif;
+}
+
+#muskty{
+    color:turquoise;
+    font-family: "Saira-condensed",monospace;
+    background:brown;
+}
+
+#anti{
+    color:beige;
+    font-family: "Saira-Condensed",sans-serif;
+    font-weight:700em;
+    
+    
+    
+}
+   
+footer{
+    color:lightcyan;
+    font-family: "Saira-condensed",cursive;
+}
+
+
+#container {
+	width:500px;
+        margin:auto; 
+        border: 1px solid black;
+       padding: 10px;
+       background:url('../img/tako.jpg')fixed no-repeat center; 
+       background-size:cover;
+    margin:1em;
+      
+}
+
+nav ul{
+    list-style: none; 
+    padding-left: 0px; 
+    color:antiquewhite;
+    
+    
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    background: black; 
+    color:brown;
+    font-size:2em;
+    text-align: middle; 
+    position: absolute;
+    padding:5px;
+    margin-bottom: 5px;
+   
+}
+
+nav a{
+    background: orange;
+}
+
+figure{
+    margin:0px; 
+    
+}
+
+figure{
+    width:100px; 
+}
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    #container{
+        
+        width:700px;
+    }
+    
+    nav li{
+        display:inline-block;
+    }
+        
+    }
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+    body{
+        background: 
+    }
+    
+    
+    nav a {
+      background: none; 
+        text-decoration:underline; 
+        color:black;
+        font-size:1em; 
+        
+    }
+    
+    #container{
+        width:1000px;
+        background:white; 
+    }
+    figure{
+        float:left;
+        width:38%;
+    }
+    section{
+        float:right;
+        width:40%;
+        padding: 15%;
+    }
+    footer{
+        clear:both;
+    }
+	
+	
+} /* closes 1024px+ */
+
+
+
