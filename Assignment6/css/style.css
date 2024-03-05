@@ -166,7 +166,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
         width:40%;
         padding: 15%;
         position: absolute;
-        right:456px;
+        right:-234px;
     }
     
     #muskty{
