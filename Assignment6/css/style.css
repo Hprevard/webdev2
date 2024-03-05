@@ -52,7 +52,7 @@ footer{
 
 
 #container {
-	width:500px;
+	width:auto;
         margin:auto; 
         border: 1px solid black;
        padding: 10px;
@@ -93,7 +93,7 @@ figure{
 }
 
 figure{
-    width:100px; 
+    width:auto; 
 }
 
 
@@ -118,7 +118,20 @@ You can adjust the min-width numbers below, and add as many new media queries as
     nav li{
         display:inline-block;
     }
+	
         
+     #anti{
+        float:right;
+        width:40%;
+        padding: 15%;
+        
+    }
+    
+    #muskty{
+        
+        float: left;
+         width:40%;
+        padding: 15%;
     }
 	
 	
@@ -132,6 +145,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 1024px) {
     body{
         background: 
+		flex-direction:row;
     }
     
     
@@ -147,14 +161,20 @@ You can adjust the min-width numbers below, and add as many new media queries as
         width:1000px;
         background:white; 
     }
-    figure{
-        float:left;
-        width:38%;
-    }
-    section{
+     #anti{
         float:right;
         width:40%;
         padding: 15%;
+        position: absolute;
+        
+    }
+    
+    #muskty{
+        
+        float: left;
+         width:40%;
+        padding: 15%;
+        position: absolute;
     }
     footer{
         clear:both;
