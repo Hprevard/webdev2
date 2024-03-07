@@ -123,7 +123,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
      #anti{
         float:right;
         width:40%;
-        padding: 15%;
+        padding: 10px;
         
     }
     
@@ -131,7 +131,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
         
         float: left;
          width:40%;
-        padding: 15%;
+        padding: 10px;
     }
 	
 	
