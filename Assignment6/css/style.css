@@ -16,8 +16,8 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-    background:#D9A3B5 url('../img/chik.jpeg')no-repeat fixed center; 
-    background-size: contain;
+    background:#D9A3B5 url('../img/chik.jpeg') no-repeat fixed center; 
+    background-size: cover;
 	
 	
 }
