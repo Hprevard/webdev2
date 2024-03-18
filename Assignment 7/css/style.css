@@ -16,12 +16,127 @@ html {
 
 body {
 	
-	
+	background: #D9A3B5;
 }
 
+p#message {
+    
+    color:palevioletred;
+}
+
+p{
+    color: firebrick;
+    
+}
+
+h1{
+    color: crimson;
+    font-size: 35px;
+}
 
 #container {
-	
+width:800px; 
+position: relative; 
+    margin:auto;
+	max-width:800px;
+    width:90%;
+    border:1px solid #5FB0BB; 
+
+}
+
+#pookie{
+  font-size: 127px;
+    right: 327px; 
+    top: 76px;
+    position:absolute; 
+    animation: slide 3s linear infinite;   
+    
+}
+@keyframes slide{
+    
+    from{transform: translateX(0);}
+    to {transform: translateX(200px);}
+}
+
+#pookie:hover{
+      width:200px;
+}
+
+#tulip {
+     font-size: 127px;
+    bottom: -423px; 
+    right:-367px;
+    position:relative;
+     
+}
+
+#mush{
+    
+font-size: 115px;
+    bottom:-456px;
+    position:relative;
+}
+
+#sakura{
+    position: relative;
+    bottom: -232px;
+    right:27px;
+    font-size: 115px;
+}
+
+#cream{
+    position: relative;
+    bottom: -36px;
+    left:56px;
+    font-size: 115px;
+    
+}
+#dango{
+   position: relative;
+    bottom: 50px;
+    right:-342px;
+    font-size: 115px; 
+}
+
+#heart {
+   position: relative;
+   top: 67px;
+    left:198px;
+    font-size: 115px; 
+}
+#cupid{
+   position: relative;
+    bottom: -95px;
+    left:357px;
+    font-size: 115px; 
+}
+
+#crystal{
+    position: relative;
+    top:-87px;
+    left:527px;
+    font-size: 115px;
+}
+
+#aries{
+   position: relative;
+    top: -250px;
+    left:527px;
+    font-size: 115px; 
+}
+
+#taurus{
+    position: relative;
+    top: 50px;
+    left:489px;
+    font-size: 115px;
+}
+
+#gemini{
+  position: relative;
+    bottom: -90px;
+    left:127px;
+    font-size: 115px;  
 }
 
 

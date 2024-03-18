@@ -14,22 +14,36 @@
     
       function burningQuestion(){
           
-         var answers =[
-         "statement 1",
-             "statement 2",
-             "statement 3",
-             "statement 4",
-             "statement 5",
-             "statement 6",
-             "statement 7",
-             "statement 8",
-             "statement 9",
-             "statement 10"
+         const answers =[
+         "maybe pookie who knows",
+             "defintely not him for sure",
+             "Try again I'm kinda sleepy",
+             "Not at all there's like 30 red flags",
+             "I mean there is a chance",
+             "Hey girlie I dont think you wanna hear this",
+             "You and I both know this isnt gonna happen",
+             "Are you seriously asking about ur situationship",
+             "ur technically married fr",
+             "delulu for sure but yes",
+             "Is he really the one you're asking about",
+             "You should be asking if he has a job",
+             "I think you should be single for a while",
+             "y'all are soulmates fr",
+             "can I come to the wedding bookie<3",
+             "Maybe i shouldnt be the one you ask",
+             "there's defintely SOMETHING there",
+             "why don't we ask about another guy.",
+             "dont you have anything better to do."
+             
          ];
           
-          var createAnswer=answers[Math.Floor(Math.random()*answers.length)]; 
           
+           const index = Math.floor(Math.random() * answers.length);
+
+           const answer = answers[index];
           
+         
+          document.getElementById("message").textContent = answer;  
       } 
         
         
@@ -42,15 +56,29 @@
 
 <body>
 
-  <div id="container">
-
+ <div id="container">
+<h1>Crystal Ball Project</h1>
 <form>
-   <p>Is he the one?</p>   
+   <p>Is he the one?🌼</p> 
+    <p>Type out his name and see :)</p>
       </form>
-<input type="text">
-<input type="button" onclick="burningQuestion()" value="Tell me!">
-      
-
+<input type="text" id="question" placeholder="Name right here <3">
+<button onclick="burningQuestion()" >"Tell me!"</button>
+  <p id="message">Your answer will appear here....</p>     
+    <div id="pookie"> 🌼 </div>
+     <div id="tulip"> 🌷 </div>
+     <div id="mush"> 🍄 </div>
+     <div id="sakura"> 🌸 </div>
+     <div id="cream"> 🍦 </div>
+     <div id="dango"> 🍡</div>
+      <div id="heart">💕</div>
+     <div id="cupid">💘</div>
+     <div id="crystal">🔮</div>
+     <div id="aries">♈</div>
+      <div id="taurus">♉️</div>
+     <div id="gemini">♊️</div>
+    
+     
   </div><!-- close "container" -->
   
 
