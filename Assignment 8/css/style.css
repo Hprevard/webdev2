@@ -96,7 +96,6 @@ nav ul {
 
 nav li{
     display:inline-block;
-    width:13%;
     flex: 1 1 auto; 
 }
 #astro{
