@@ -161,7 +161,7 @@ main{
     display: flex;
 }
 
-figure,section {
+figure, div.video-container {
     flex:1 1 50%;
 }
 	
