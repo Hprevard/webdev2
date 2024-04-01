@@ -16,14 +16,131 @@ html {
 
 body {
 	
-	
+	background: #D9A3B5;
 }
 
 
 #container {
+	width:800px; 
+position: relative; 
+    margin:auto;
+	max-width:800px;
+    width:90%;
+    border:1px solid #5FB0BB; 
+}
+
+p{
+    color: firebrick;
+    
+}
+
+h1{
+    color: crimson;
+    font-size: 35px;
+}
+
+header, footer {
+	background:lavenderblush ;
+	color:lightcoral;
+}
+
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p{
+   font-family: "Fuzzy Bubbles", sans-serif;
+   font-weight: 400; 
+    color: rosybrown;
+}
+h1{
+   font-family: "Fuzzy Bubbles", sans-serif;
+   font-weight: 700; 
+    color: lightcyan;
+}
+
+header {
+
+	padding:2em;
+	text-align:center;
+}
+
+footer {
+	padding: 1em;
+    
+}
+main{
+    display: flex;
+    
+}
+
+figure,section {
+    flex:1 1 50%;
+    
+}
+
+
+figure {
+	margin:0px;
+	border:1px solid black;
+	padding:0.5em;
 	
 }
 
+
+section {
+	background:#D4396D;
+	padding:1em;
+}
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+
+main{
+    display: flex;
+}
+
+figure,section {
+    flex:1 1 50%;
+}
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	#container {
+	width:1000px;
+	margin:auto;
+	background:beige;
+}
+	
+} /* closes 1024px+ */
 
 
 

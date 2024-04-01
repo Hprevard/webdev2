@@ -6,9 +6,12 @@
 	
 	<meta charset="utf-8">
 	
-	<title>***</title>
+	<title>Jquery</title>
 	
-	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">	
 	
 </head>
 
@@ -18,25 +21,88 @@
   <div id="container">
 
 <header>
-<h1>Big page title</h1>
-<h2>Secondary title</h2>
+<h1>Family Story</h1>
+<h2>This is a excerpt from a story I wrote in my horror writing class</h2>
 </header>
 
 <main>
+<section>
+<p>Smiling wide it’s mouth showed rows of teeth with various sizes still blooded and rank with a breath akin to the smell of death itself. As if the waves of its breath was lulling me to stay still and not moving. Being put into a dreamlike state and losing feeling in all of my limbs. It moves closer, its steps resounding loud like a car crash. Wondering how I didn’t hear its movements before now. As its face gets closer its jaw lowers more showing moving arms in its mouth. The arms definitely weren’t its because they varied in different skin colors. 
 
-<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+</p>
+    
+    </section>
+   <button> more </button> 
+    
+<section>
+<p id="hidden"> “We were waiting for you Tina.” 	
+	The voice speaking comes from the mouth of the creature, yet it sounds like the combined voices of my mother, step father and step sister. It continues to move closer as if using it voice to weaken and corner me. 
+“We were looking for you. You didn’t have to run away from us. We’re a family.”
+    
+    Yelling that statement and quickly moving my body into a sprint. Running towards my step fathers body where I spotted the keys to the truck that wasn’t far. Breathing in and out my mouth hurriedly while I reach for the keys in his pocket I jump as I hear my stepfather’s voice coming from his body.
+“You weren’t supposed to do that you were supposed to join us.” 
+</p>
+</section>
+     <button> more </button> 
+  <section>  
+    <p id="hidden">
+      Continuing to run as fast as I could. Ignoring my stumbles over rocks and roots. I press the button on the keys to start up the car. Hearing the ignition hum and roar I hear more  voices behind me. I run quickly to the drivers side of the huge truck almost ripping the door open and jumping into the seat sliding in and swinging the door closed. Stepping on the break I shift the gear to reverse and immediately release my foot and hit the gas sending the car flying back almost hitting a huge tree. Gasping myself out of shock I shift the gear into drive fleeing onto the roads to get out of the park. 
 
-<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-
+      
+      </p>
+    
+    
+    
+    </section>
+    
+    <p> Reaching the streets that lead to the freeway I speed completely racing through and ignoring any cars that might come past. But after a while on the road I started to realize that the roads are completely empty. There were no other cars and only the street lights that light up the roads. 
+    
+    </p>
 </main>
 
+<footer>
+      <p>
+    &#169;Havi Prevard, all rights reserved, 2024 
+    </p>
+      </footer>
 
 
   </div><!-- close "container" -->
   
   
   <!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   
+
+<script>
+    
+    $('p#hidden').hide();
+  $(document).ready(function() {
+$('button').click(function(){
+    
+      $('p#hidden').slideDown();
+});
+      
+      $('h2').click(function(){
+        $('p#hidden').slideDown(); 
+      
+      });
+
+      $('h1').click(function(){
+        $('p#hidden').slideUp(); 
+      
+      });
+      
+      $('button').click(function(){
+       $('h1').fadeOut();   
+      });
+
+      
+  }); //close .ready()
+</script>
+
+
   
   
 
