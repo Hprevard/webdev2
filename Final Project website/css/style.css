@@ -1,0 +1,200 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background:#D9A3B5;
+	
+}
+
+
+#container {
+	width:80%;
+	margin:auto;
+	background:beige;
+
+}
+
+.video-container {
+  position: relative;
+  height:0px;
+  padding-bottom: 56.25%;
+   overflow: hidden;
+    max-width: 100%;
+}
+ 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+    height: 100%;
+}
+header, footer {
+	background: powderblue;
+	color:white;
+}
+.kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+figcaption{
+    
+    
+}
+
+p{
+    
+}
+
+h1{ 
+
+}
+
+
+header {
+    
+    
+}
+
+footer {
+	padding: 1em;
+    
+}
+
+nav ul {
+	list-style:none;
+	padding-left:0px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+nav li{
+    display:inline-block;
+    width:13%;
+    flex: 1 0 auto; 
+}
+
+nav a {
+	display:block;
+	text-decoration:none;
+	padding:1em;
+	border:1px solid #CFBEF8;
+}
+a{
+    
+}
+
+main{
+    display: flex;
+    
+}
+
+figure,section {
+    flex:1 1 50%;
+    
+}
+
+
+figure {
+	margin:0px;
+	border:1px solid black;
+	padding:0.5em;
+	
+}
+
+figure img {
+	width: 100%;
+}
+
+section {
+	background:#D4396D;
+	padding:1em;
+}
+
+
+
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	main{
+    display: flex;
+}
+
+figure, div.video-container {
+    flex:1 1 50%;
+}
+
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	#container {
+	width:1000px;
+	margin:auto;
+	background:beige;
+}
+
