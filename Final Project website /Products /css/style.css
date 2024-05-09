@@ -16,15 +16,32 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-	background:#A5d2ff;
 	
+	background:#E3F0ff;
 }
 
+header {
+     background-color: #E3F0FF;
+    color:#EAD9FF;
+    padding: 20px 10px;
+      font-family:'Cinzel Decorative', serif;
+   font-weight: 700;
+      font-size: 1em;
+    position:relative; 
+    top: 14px;
+
+    
+}
+.style-bar {
+    height: 10px; 
+    background-color: #FFEC7f; /
+    width: 100%; 
+}
 
 #container {
 	width:80%;
 	margin:auto;
-	background:#E3f0ff;
+	background:#FFFABB;
 
 }
 
@@ -36,7 +53,7 @@ body {
     max-width: 100%;
 }
 
- 
+
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -83,23 +100,55 @@ body {
   font-style: normal;
 }
 figcaption{
-    
+    font-family: "Kalam", cursive;
+  font-weight: 400;
+    color:#A5D2FF; 
     
 }
 
-.icon{ 
-     position: relative;
-    top: 3px;
-    left: 6px;
-    width: 89px;
-    height: auto; 
-}
 .pot{
     max-width:24%;
     height:127%;
     display: block;
     
 }
+
+
+.spoon{
+     max-width:40%;
+    height:127%;
+    display: block;
+}
+
+.knife{
+    max-width:54%;
+    height:127%;
+    display: block;
+}
+
+.fork{
+    max-width:67%;
+    height:127%;
+    display: block;
+}
+.lie {
+    max-width:78%;
+    height:127%;
+    display: block;
+}
+
+.truth{
+    max-width:78%;
+    height:127%;
+    display: block;
+}
+
+.product{
+    max-width:40%;
+    height:127%;
+    display: block;
+}
+
 
 p{
     font-family: "Kalam", cursive;
@@ -113,56 +162,40 @@ h1{
     color: #ffec7f;
 }
 
-
-header {
-   font-family:'Cinzel Decorative', serif;
-   font-weight: 700;
-    color: #ffec7f; 
-    font-size: 1em;
-    position:relative; 
-    top: 14px;
-}
-
 footer {
 	padding: 1em;
     
 }
-
-nav ul {
-	list-style:none;
-	padding-left:0px;
-    display: flex;
-    flex-wrap:wrap;
-}
-
-nav li{
-    display:inline-block;
-    width:13%;
-    flex: 1 0 auto; 
-}
-
-nav a {
-	display:block;
-	text-decoration:none;
-	padding:1em;
-	border:1px solid #EAD9FF;
-    font-family: 'Cinzel Decorative', serif; 
-    font-weight: 400;
-    color:#A5D2ff;
-}
-a{
-    
-}
-
 main{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 figure,section {
     flex:1 1 50%;
     
+}
+.media-container{
+display:flex; 
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+        
+}
+.figure, .video-container{
+    flex: 1;
+    padding: 10px; 
+}
+.media-container figure, .media-container iframe {
+    flex: 1;
+    max-width: 50%; 
+}
+.media-container iframe {
+    width: 100%
+    height:auto;
 }
 
 
@@ -177,14 +210,8 @@ figure img {
 	width: 100%;
 }
 
-.fries {
-	background:#FFFABB;
-	padding:1em;
-}
 
-.burger{
-    background: #FFEC7F;
-}
+
 
 
 
@@ -203,6 +230,11 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
+    .media-container{
+        flex-direction: column;
+    }
+    
+	
 	main{
     display: flex;
 }
@@ -212,7 +244,6 @@ figure, div.video-container {
 }
 
 	
-	
 } /* closes 769px+ */
 
 
@@ -221,10 +252,14 @@ figure, div.video-container {
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	
 	#container {
 	width:1000px;
 	margin:auto;
 	background:beige;
-}
+
+	
+	
+} /* closes 1024px+ */
+
+
 

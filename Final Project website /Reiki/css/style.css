@@ -16,18 +16,32 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-	background:#A5d2ff;
+	background:#FFFABB;
 	
 }
+header {
+     background-color: #EAD9FF;
+    color:#E3f0ff;
+    padding: 20px 10px;
+      font-family:'Cinzel Decorative', serif;
+   font-weight: 700;
+      font-size: 1em;
+    position:relative; 
+    top: 14px;
 
+    
+}
 
+.style-bar {
+    height: 10px; 
+    background-color: #E3f0ff; /
+    width: 100%; 
+}
 #container {
 	width:80%;
 	margin:auto;
-	background:#E3f0ff;
-
+	background:#FFEc7f;
 }
-
 .video-container {
   position: relative;
   height:0px;
@@ -35,8 +49,6 @@ body {
    overflow: hidden;
     max-width: 100%;
 }
-
- 
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -83,19 +95,14 @@ body {
   font-style: normal;
 }
 figcaption{
-    
+    font-family: "Kalam", cursive;
+  font-weight: 400;
+    color:#A5D2FF; 
     
 }
 
-.icon{ 
-     position: relative;
-    top: 3px;
-    left: 6px;
-    width: 89px;
-    height: auto; 
-}
 .pot{
-    max-width:24%;
+    max-width:45%;
     height:127%;
     display: block;
     
@@ -110,59 +117,33 @@ p{
 h1{ 
     font-family: 'Cinzel Decorative', serif;
     font-weight: 700;
-    color: #ffec7f;
-}
-
-
-header {
-   font-family:'Cinzel Decorative', serif;
-   font-weight: 700;
-    color: #ffec7f; 
-    font-size: 1em;
-    position:relative; 
-    top: 14px;
+    color: #A5d2ff;
 }
 
 footer {
 	padding: 1em;
     
 }
-
-nav ul {
-	list-style:none;
-	padding-left:0px;
-    display: flex;
-    flex-wrap:wrap;
-}
-
-nav li{
-    display:inline-block;
-    width:13%;
-    flex: 1 0 auto; 
-}
-
-nav a {
-	display:block;
-	text-decoration:none;
-	padding:1em;
-	border:1px solid #EAD9FF;
-    font-family: 'Cinzel Decorative', serif; 
-    font-weight: 400;
-    color:#A5D2ff;
-}
-a{
-    
-}
-
 main{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 figure,section {
     flex:1 1 50%;
     
+}
+.media-container{
+display:flex; 
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+        
+}
+.figure, .video-container{
+    flex: 1;
+    padding: 10px; 
 }
 
 
@@ -175,15 +156,6 @@ figure {
 
 figure img {
 	width: 100%;
-}
-
-.fries {
-	background:#FFFABB;
-	padding:1em;
-}
-
-.burger{
-    background: #FFEC7F;
 }
 
 
@@ -203,6 +175,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
+		
 	main{
     display: flex;
 }
@@ -210,7 +183,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 figure, div.video-container {
     flex:1 1 50%;
 }
-
 	
 	
 } /* closes 769px+ */
@@ -221,10 +193,14 @@ figure, div.video-container {
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	
 	#container {
 	width:1000px;
 	margin:auto;
 	background:beige;
-}
+
+	
+	
+} /* closes 1024px+ */
+
+
 

@@ -16,16 +16,30 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-	background:#A5d2ff;
+	background: #E3F0FF;
 	
 }
 
+header {
+     background-color: #FFFABB;
+    color:#EAD9ff;
+    padding: 20px 10px;
+      font-family:'Cinzel Decorative', serif;
+   font-weight: 700;
+      font-size: 1em;
+    position:relative; 
+    top: 14px;
+}
+.style-bar {
+    height: 10px; 
+    background-color: #EAD9FF; /
+    width: 100%; 
+}
 
 #container {
 	width:80%;
 	margin:auto;
-	background:#E3f0ff;
-
+	background:#FFFABB;
 }
 
 .video-container {
@@ -36,7 +50,6 @@ body {
     max-width: 100%;
 }
 
- 
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -83,24 +96,26 @@ body {
   font-style: normal;
 }
 figcaption{
-    
+    font-family: "Kalam", cursive;
+  font-weight: 400;
+    color:#A5D2FF; 
     
 }
 
-.icon{ 
-     position: relative;
-    top: 3px;
-    left: 6px;
-    width: 89px;
-    height: auto; 
-}
 .pot{
     max-width:24%;
-    height:127%;
+    height:145%;
     display: block;
     
 }
-
+.knife{
+    
+    max-width: 40%;
+      height:127%;
+    display: block; 
+    justify-content: center;
+    
+}
 p{
     font-family: "Kalam", cursive;
   font-weight: 400;
@@ -110,59 +125,33 @@ p{
 h1{ 
     font-family: 'Cinzel Decorative', serif;
     font-weight: 700;
-    color: #ffec7f;
-}
-
-
-header {
-   font-family:'Cinzel Decorative', serif;
-   font-weight: 700;
-    color: #ffec7f; 
-    font-size: 1em;
-    position:relative; 
-    top: 14px;
+    color: #EAD9FF;
 }
 
 footer {
 	padding: 1em;
     
 }
-
-nav ul {
-	list-style:none;
-	padding-left:0px;
-    display: flex;
-    flex-wrap:wrap;
-}
-
-nav li{
-    display:inline-block;
-    width:13%;
-    flex: 1 0 auto; 
-}
-
-nav a {
-	display:block;
-	text-decoration:none;
-	padding:1em;
-	border:1px solid #EAD9FF;
-    font-family: 'Cinzel Decorative', serif; 
-    font-weight: 400;
-    color:#A5D2ff;
-}
-a{
-    
-}
-
 main{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 figure,section {
     flex:1 1 50%;
     
+}
+.media-container{
+display:flex; 
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+        
+}
+.figure, .video-container{
+    flex: 1;
+    padding: 10px; 
 }
 
 
@@ -177,14 +166,10 @@ figure img {
 	width: 100%;
 }
 
-.fries {
-	background:#FFFABB;
-	padding:1em;
-}
 
-.burger{
-    background: #FFEC7F;
-}
+
+
+
 
 
 
@@ -204,27 +189,25 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 769px) {
 	
 	main{
-    display: flex;
-}
-
+        display: flex;}
 figure, div.video-container {
     flex:1 1 50%;
-}
-
-	
+}	
 	
 } /* closes 769px+ */
-
 
 
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	
 	#container {
 	width:1000px;
 	margin:auto;
 	background:beige;
-}
+	
+	
+} /* closes 1024px+ */
+
+
 
